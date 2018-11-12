@@ -5,8 +5,7 @@ import "fmt"
 func main() {
 
 	// create slice
-	numbers := []int{8, 1, 10, 5, 3, 2, 6, 7, 4, 9}
-
+	var numbers = []int{8, 1, 10, 5, 3, 2, 6, 7, 4, 9}
 	// get the length of a slice
 	length := len(numbers)
 
