@@ -14,16 +14,23 @@ func main() {
 	fmt.Println("The length is:", length)
 
 	// iterating over an slice
-	// print both index and number
-	for index, number := range numbers {
-		fmt.Printf("Index: %v and Number: %v\n", index, number)
-
-	}
+	print(numbers)
 
 	// get sum of numbers
 	sum := sum(numbers)
 	fmt.Println("Sum of numbers:", sum)
 
+	// get average
+	avg := average(numbers)
+	fmt.Println("Average of numbers:", avg)
+
+}
+
+func print(arr []int) {
+	for index, number := range arr {
+		fmt.Printf("Index: %v and Number: %v\n", index, number)
+
+	}
 }
 
 func sum(arr []int) int {
@@ -32,4 +39,13 @@ func sum(arr []int) int {
 		sum += number
 	}
 	return sum
+}
+
+func average(arr []int) int {
+	sum := 0
+	for _, number := range arr {
+		sum += number
+	}
+	return sum / len(arr)
+
 }
