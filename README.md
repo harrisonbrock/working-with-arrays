@@ -9,7 +9,7 @@ I'm going to show some basic of working with array or slice.
 var arr = [5]{0,1,3,4}
 
 // this creates an slice of ints with no fixed size
-var mySlice = []int{8, 1, 10, 5, 3, 2, 6, 7, 4, 9}
+var numbers = []int{8, 1, 10, 5, 3, 2, 6, 7, 4, 9}
 ```
 
 **Iterating Over Slice Or Array.**
@@ -43,5 +43,14 @@ func average(arr []int) int {
 	}
 	return sum / len(arr)
 
+}
+```
+
+**Sorting Slice or Array**
+```go
+func main () {
+	var numbers = []int{8, 1, 10, 5, 3, 2, 6, 7, 4, 9}
+	// be sure to import sort
+	sort.Ints(numbers)
 }
 ```

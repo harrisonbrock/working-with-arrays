@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 
@@ -22,6 +25,9 @@ func main() {
 	// get average
 	avg := average(numbers)
 	fmt.Println("Average of numbers:", avg)
+
+	sort.Ints(numbers)
+	print(numbers)
 
 }
 
